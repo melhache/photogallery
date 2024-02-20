@@ -1,0 +1,233 @@
+html{
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 25px 25px 0 25px;
+   
+    
+}
+
+header{
+    background-color: white;
+
+}
+
+a[href="#top"] {
+    color: #ffffff;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border: 2px solid #ffffff;
+    padding: 3px;
+       
+  }
+  a[href="#about"]{float:left;
+margin-left:10px;
+} 
+  
+  a[href="#contact"]{float:right;
+margin-right: 10px;
+} 
+
+ h1{
+    color:#007d7b;
+    font-size:3em;
+ }
+ h2{
+    font-weight: bold;
+    font-size: 2em;
+ }
+ p{
+    text-align: left;
+    font-size: 1.25em;
+    
+ }
+
+ nav a{
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+ }
+
+ul li{ display: inline;}
+
+ ul{
+    
+    list-style-type: none; 
+    padding: 0;
+    
+ }
+    
+    
+
+ main{
+    background-color: #ffffff;
+    padding: 8px;
+   
+ }
+
+ 
+#contact{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+figcaption, label, input{
+    font-size:  1em;
+}
+figcaption{
+    position: absolute;
+    /* top: 10%; */
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+figure:nth-child(1) figcaption{
+    color: #ffffff;
+    bottom: 10%;
+}
+figure:nth-child(2) figcaption{
+    color: #ffffff;
+    top: 10%;
+}
+figure:nth-child(3) figcaption{
+    color: #ffffff;
+    bottom: 10%;
+}figure:nth-child(4) figcaption{
+    color: #000000;
+    top: 10%;
+}
+figure:nth-child(5) figcaption{
+    color: #000000;
+    top: 10%;
+}
+figure:nth-child(6) figcaption{
+    color: #000000;
+    bottom: 10%;
+}
+figure:nth-child(7) figcaption{
+    color: #ffffff;
+    bottom: 10%;
+}
+figure:nth-child(8) figcaption{
+    color: #000000;
+    top: 10%;
+}
+figure:nth-child(9) figcaption{
+    color: #000000;
+    top: 10%;
+}
+figure:nth-child(10) figcaption{
+    color: #000000;
+    top: 10%;
+}
+figure:nth-child(11) figcaption{
+    color: #000000;
+    top: 10%;
+}
+figure:nth-child(12) figcaption{
+    color: #ffffff;
+   top: 10%;
+}
+.contentimage{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+      
+}
+
+#container{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Gallery{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+ 
+}
+#contact p{
+    text-align: center;
+}
+::placeholder{ color: #007d7b;
+                font-weight: bold;
+ }
+
+input[type=submit]{
+    background-color: #007d7b;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+  
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 10px;
+} 
+footer{
+    color: #ffffff;
+    margin-top: 35px;
+}
+ @media screen and (min-width:485px) {
+     
+
+ h1{ text-align: left;}   
+.Gallery{ 
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        padding: 0;
+        
+}    form{width: 100%;
+    }
+a[href="#about"]{float:left;
+        margin-left:25px;
+        } 
+ 
+a[href="#contact"]{float:right;
+        margin-right: 25px;
+        } 
+
+ }
+
+ @media screen and (min-width:880px) {
+     
+
+    h1{ text-align: left;}   
+   .Gallery{ 
+           grid-template-columns: auto auto auto;
+           column-gap: 10px;
+           row-gap: 10px;
+           padding: 0;
+           
+   }    form{width: 100%;
+       }
+    ul{
+        align-items: end ;
+        display: flex;
+        justify-content: flex-end;
+        
+    }   
+    li{ margin-left: 20px;}
+    }
